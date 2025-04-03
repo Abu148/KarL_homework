@@ -1,0 +1,32 @@
+python -m venv myenv 
+myenv\Scripts\Activate 
+
+def add(a, b):
+    return a + b
+def subtract(a, b):
+    return a - b
+def multiply(a, b):
+    return a * b
+def divide(a, b):
+    if b == 0:
+        return "Error: Division by zero is not allowed"
+    return a / b
+      
+if __name__ == "__main__":
+    print("Addition:", add(10, 5))
+    print("Subtraction:", subtract(10, 5))
+    print("Multiplication:", multiply(10, 5))
+    print("Division:", divide(10, 5))  
+
+
+def reverse_string(s):
+    return s[::-1]
+  
+def count_vowels(s):
+    vowels = 'aeiouAEIOU'
+    return sum(1 for char in s if char in vowels)
+
+
+if __name__ == "__main__":
+  print("Reversed string:", reverse_string("abdulaziz"))  # 'zizaludba'
+    print("Vowel count:", count_vowels("hello world"))  # 3
